@@ -1,0 +1,727 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.ico">
+  <link rel="icon" href="/img/fluid.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Willow-God">
+  <meta name="keywords" content="柳神的博客,清羽飞扬,柳神,清扬">
+  
+    <meta name="description" content="全国数模大赛历年题目及论文2022年题目A题目：波浪能最大输出功率设计 B题目：无人机遂行编队飞行中的纯方位无源定位 C题目：古代玻璃制品的成分分析与鉴别 D题目：气象报文信息卫星通信传输 E题目：小批量物料的生产安排 优秀论文链接 2021年题目A题目：“FAST”主动反射面的形状调节 B题目：乙醇耦合制备C4烯烃 C题目：生产企业原材料的订购与运输 D题目：连铸切割的在线优化 E题目：中药材的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全国数模大赛历年题目及论文">
+<meta property="og:url" content="https://willow-god.gitee.io/2023/03/26/%E5%85%A8%E5%9B%BD%E6%95%B0%E6%A8%A1%E5%A4%A7%E8%B5%9B%E5%8E%86%E5%B9%B4%E9%A2%98%E7%9B%AE%E5%8F%8A%E8%AE%BA%E6%96%87/index.html">
+<meta property="og:site_name" content="清羽飞扬，欢迎您的到来">
+<meta property="og:description" content="全国数模大赛历年题目及论文2022年题目A题目：波浪能最大输出功率设计 B题目：无人机遂行编队飞行中的纯方位无源定位 C题目：古代玻璃制品的成分分析与鉴别 D题目：气象报文信息卫星通信传输 E题目：小批量物料的生产安排 优秀论文链接 2021年题目A题目：“FAST”主动反射面的形状调节 B题目：乙醇耦合制备C4烯烃 C题目：生产企业原材料的订购与运输 D题目：连铸切割的在线优化 E题目：中药材的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-26T02:29:41.061Z">
+<meta property="article:modified_time" content="2023-03-26T03:23:27.431Z">
+<meta property="article:author" content="Willow-God">
+<meta property="article:tag" content="建模大赛">
+<meta property="article:tag" content="资料分享">
+<meta property="article:tag" content="matlab">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>全国数模大赛历年题目及论文 - 清羽飞扬，欢迎您的到来</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"willow-god.gitee.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Willow God,Hello friends</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="全国数模大赛历年题目及论文"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-03-26 10:29" pubdate>
+          2023年3月26日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          979 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">全国数模大赛历年题目及论文</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="全国数模大赛历年题目及论文"><a href="#全国数模大赛历年题目及论文" class="headerlink" title="全国数模大赛历年题目及论文"></a>全国数模大赛历年题目及论文</h1><h2 id="2022年"><a href="#2022年" class="headerlink" title="2022年"></a>2022年</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2022-A.pdf">波浪能最大输出功率设计</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2022-B.pdf">无人机遂行编队飞行中的纯方位无源定位</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2022-C.pdf">古代玻璃制品的成分分析与鉴别</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2022-D.pdf">气象报文信息卫星通信传输</a></p>
+<p>E题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2022-E.pdf">小批量物料的生产安排</a></p>
+<h3 id="优秀论文"><a href="#优秀论文" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="https://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2022qgdxssxjmjslwzs/2022gjsbqgdxssxjmjslwzs.shtml">链接</a></p>
+<h2 id="2021年"><a href="#2021年" class="headerlink" title="2021年"></a>2021年</h2><h3 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2021-A.pdf">“FAST”主动反射面的形状调节</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2021-B.pdf">乙醇耦合制备C4烯烃</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2021-C.pdf">生产企业原材料的订购与运输</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2021-D.pdf">连铸切割的在线优化</a></p>
+<p>E题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2021-E.pdf">中药材的鉴别</a></p>
+<h3 id="优秀论文-1"><a href="#优秀论文-1" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="https://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2021qgdxssxjmjslwzs/2021gjsbqgdxssxjmjslwzs.shtml">链接</a></p>
+<h2 id="2020年"><a href="#2020年" class="headerlink" title="2020年"></a>2020年</h2><h3 id="题目-2"><a href="#题目-2" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2020-A.pdf">炉温曲线</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2020-B.pdf">穿越沙漠</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2020-C.pdf">中小微企业的信贷决策</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2020-D.pdf">接触式轮廓仪的自动标注</a></p>
+<p>E题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2020-E.pdf">校园供水系统智能管理</a></p>
+<h3 id="优秀论文-2"><a href="#优秀论文-2" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2020qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2019年"><a href="#2019年" class="headerlink" title="2019年"></a>2019年</h2><h3 id="题目-3"><a href="#题目-3" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2019-A.pdf">高压油管的压力控制</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2019-B.pdf">“同心协力”策略研究</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2019-C.pdf">机场的出租车问题</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2019-D.pdf">空气质量数据的校准</a></p>
+<p>E题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2019-E.pdf">“薄利多销”分析</a></p>
+<h3 id="优秀论文-3"><a href="#优秀论文-3" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2019qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2018年"><a href="#2018年" class="headerlink" title="2018年"></a>2018年</h2><h3 id="题目-4"><a href="#题目-4" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2018-A.pdf">高温作业专用服装设计</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2018-B.pdf">智能RGV的动态调度策略</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2018-C.pdf">大型百货商场会员画像描绘</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2018-D.pdf">汽车总装线的配置问题</a></p>
+<h3 id="优秀论文-4"><a href="#优秀论文-4" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2018qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2017年"><a href="#2017年" class="headerlink" title="2017年"></a>2017年</h2><h3 id="题目-5"><a href="#题目-5" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2017-A.pdf">CT系统参数标定及成像</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2017-B.pdf">“拍照赚钱”的任务定价</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2017-C.pdf">颜色与物质浓度辨识</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2017-D.pdf">巡检线路的排班</a></p>
+<h3 id="优秀论文-5"><a href="#优秀论文-5" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2017qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2016年"><a href="#2016年" class="headerlink" title="2016年"></a>2016年</h2><h3 id="题目-6"><a href="#题目-6" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2016-A.pdf">系泊系统的设计</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2016-B.pdf">小区开放对道路通行的影响</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2016-C.pdf">电池剩余放电时间预测</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2016-D.pdf">风电场运行状况分析及优化</a></p>
+<h3 id="优秀论文-6"><a href="#优秀论文-6" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="https://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2016qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2015年"><a href="#2015年" class="headerlink" title="2015年"></a>2015年</h2><h3 id="题目-7"><a href="#题目-7" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2015-A.pdf">太阳影子定位</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2015-B.pdf">“互联网+”时代的出租车资源配置</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2015-C.pdf">月上柳梢头</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2015-D.pdf">众筹筑屋规划方案设计</a></p>
+<h3 id="优秀论文-7"><a href="#优秀论文-7" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2015qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2014年"><a href="#2014年" class="headerlink" title="2014年"></a>2014年</h2><h3 id="题目-8"><a href="#题目-8" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2014-A.pdf">嫦娥三号软着陆轨道设计与控制策略</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2014-B.pdf">创意平板折叠桌</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2014-C.pdf">生猪养殖场的经营管理</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2014-D.pdf">储药柜的设计</a></p>
+<h3 id="优秀论文-8"><a href="#优秀论文-8" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2014qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2013年"><a href="#2013年" class="headerlink" title="2013年"></a>2013年</h2><h3 id="题目-9"><a href="#题目-9" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2013-A.pdf">车道被占用对城市道路通行能力的影响</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2013-B.pdf">碎纸片的拼接复原</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2013-C.pdf">古塔的变形</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2013-D.pdf">公共自行车服务系统</a></p>
+<h3 id="优秀论文-9"><a href="#优秀论文-9" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2013qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2012年"><a href="#2012年" class="headerlink" title="2012年"></a>2012年</h2><h3 id="题目-10"><a href="#题目-10" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2012-A.pdf">葡萄酒的评价</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2012-B.pdf">太阳能小屋的设计</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2012-C.pdf">脑卒中发病环境因素分析及干预</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2012-D.pdf">机器人避障问题</a></p>
+<h3 id="优秀论文-10"><a href="#优秀论文-10" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a target="_blank" rel="noopener" href="http://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/2012qgdxssxjmjslwzs/">链接</a></p>
+<h2 id="2011年"><a href="#2011年" class="headerlink" title="2011年"></a>2011年</h2><h3 id="题目-11"><a href="#题目-11" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2011-A.pdf">城市表层土壤重金属污染分析</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2011-B.pdf">交巡警服务平台的设置与调度</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2011-C.pdf">企业退休职工养老金制度的改革</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2011-D.pdf">天然肠衣搭配问题</a></p>
+<h3 id="优秀论文-11"><a href="#优秀论文-11" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a href="404">链接</a></p>
+<h2 id="2010年"><a href="#2010年" class="headerlink" title="2010年"></a>2010年</h2><h3 id="题目-12"><a href="#题目-12" class="headerlink" title="题目"></a>题目</h3><p>A题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2010-A.pdf">储油罐的变位识别与罐容表标定</a></p>
+<p>B题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2010-B.pdf">2010年上海世博会影响力的定量评估</a></p>
+<p>C题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2010-C.pdf">输油管的布置</a></p>
+<p>D题目：<a target="_blank" rel="noopener" href="https://pdf-1307664364.cos.ap-chengdu.myqcloud.com/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%28CUMCM%29%E5%8E%86%E5%B9%B4%E8%AF%95%E9%A2%98/%E8%AF%95%E9%A2%98PDF/CUMCM-2010-D.pdf">对学生宿舍设计方案的评价</a></p>
+<h3 id="优秀论文-12"><a href="#优秀论文-12" class="headerlink" title="优秀论文"></a>优秀论文</h3><p><a href="404">链接</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" class="category-chain-item">学习资料</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%BB%BA%E6%A8%A1%E5%A4%A7%E8%B5%9B/">#建模大赛</a>
+      
+        <a href="/tags/%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB/">#资料分享</a>
+      
+        <a href="/tags/matlab/">#matlab</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>全国数模大赛历年题目及论文</div>
+      <div>https://willow-god.gitee.io/2023/03/26/全国数模大赛历年题目及论文/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Willow-God</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年3月26日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/22/MFC%E5%AE%9E%E7%8E%B0%E5%BF%AB%E4%B9%90%E8%BF%9E%E8%BF%9E%E7%9C%8B/" title="MFC实现快乐连连看">
+                        <span class="hidden-mobile">MFC实现快乐连连看</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
