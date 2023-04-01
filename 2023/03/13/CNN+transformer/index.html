@@ -16,22 +16,25 @@
   <meta name="author" content="Willow-God">
   <meta name="keywords" content="柳神的博客,清羽飞扬,柳神,清扬">
   
-    <meta name="description" content="世界这么大，我先去看看。 我想去看黄山的松；想去看诗人苏轼作诗”欲把西湖比西子，淡妆浓抹总相宜”的西湖； 想去看似满天繁星的极光；想去看如童话般的紫藤隧道；想去看爱琴海上的浪漫岛屿圣托里尼； 想去看素有”山水甲天下”的桂林。想去进行一场漫无目的的旅行，然后找个有花有太阳的地方，安静的闻着花香，懒洋洋的晒着太阳无所事事。　　 去旅行，不确定方向，不确定地点，走到哪就停到哪拍拍风景，拍拍过路人，然后休">
+    <meta name="description" content="Transformer一.定义1.输入 –&gt; TRM –&gt; 输出 example:我爱你 –&gt; transformer –&gt;I love you transformer分为编码和解码两个操作（Encorders and Decorders） 在训练的过程中，所有的编码器结构相同，但是参数不同，也就是训练数据不同 解码器同上 1.编码器结构：(1).输入部分： Embeddi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="世界这么大，我先去看看。">
-<meta property="og:url" content="https://willow-god.gitee.io/2023/03/12/%E4%B8%96%E7%95%8C%E8%BF%99%E4%B9%88%E5%A4%A7%EF%BC%8C%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E7%9C%8B/index.html">
+<meta property="og:title" content="CNN+transformer入门学习">
+<meta property="og:url" content="https://willow-god.gitee.io/2023/03/13/CNN+transformer/index.html">
 <meta property="og:site_name" content="清羽飞扬，欢迎您的到来">
-<meta property="og:description" content="世界这么大，我先去看看。 我想去看黄山的松；想去看诗人苏轼作诗”欲把西湖比西子，淡妆浓抹总相宜”的西湖； 想去看似满天繁星的极光；想去看如童话般的紫藤隧道；想去看爱琴海上的浪漫岛屿圣托里尼； 想去看素有”山水甲天下”的桂林。想去进行一场漫无目的的旅行，然后找个有花有太阳的地方，安静的闻着花香，懒洋洋的晒着太阳无所事事。　　 去旅行，不确定方向，不确定地点，走到哪就停到哪拍拍风景，拍拍过路人，然后休">
+<meta property="og:description" content="Transformer一.定义1.输入 –&gt; TRM –&gt; 输出 example:我爱你 –&gt; transformer –&gt;I love you transformer分为编码和解码两个操作（Encorders and Decorders） 在训练的过程中，所有的编码器结构相同，但是参数不同，也就是训练数据不同 解码器同上 1.编码器结构：(1).输入部分： Embeddi">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-12T11:39:55.286Z">
-<meta property="article:modified_time" content="2023-03-12T11:43:58.388Z">
+<meta property="article:published_time" content="2023-03-13T07:19:13.844Z">
+<meta property="article:modified_time" content="2023-04-01T07:53:27.025Z">
 <meta property="article:author" content="Willow-God">
-<meta property="article:tag" content="日记">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="神经网络">
+<meta property="article:tag" content="transformer">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>世界这么大，我先去看看。 - 清羽飞扬，欢迎您的到来</title>
+  <title>CNN+transformer入门学习 - 清羽飞扬，欢迎您的到来</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="世界这么大，我先去看看。"></span>
+            <span id="subtitle" data-typed-text="CNN+transformer入门学习"></span>
           
         </div>
 
@@ -220,8 +223,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-12 19:39" pubdate>
-          2023年3月12日 晚上
+        <time datetime="2023-03-13 15:19" pubdate>
+          2023年3月13日 下午
         </time>
       </span>
     
@@ -232,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          545 字
+          402 字
         
       </span>
     
@@ -243,7 +246,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -281,20 +284,23 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">世界这么大，我先去看看。</h1>
+            <h1 style="display: none">CNN+transformer入门学习</h1>
             
             
               <div class="markdown-body">
                 
-                <p>世界这么大，我先去看看。</p>
-<p>我想去看黄山的松；想去看诗人苏轼作诗”欲把西湖比西子，淡妆浓抹总相宜”的西湖；</p>
-<p>想去看似满天繁星的极光；想去看如童话般的紫藤隧道；想去看爱琴海上的浪漫岛屿圣托里尼；</p>
-<p>想去看素有”山水甲天下”的桂林。想去进行一场漫无目的的旅行，然后找个有花有太阳的地方，安静的闻着花香，懒洋洋的晒着太阳无所事事。　　</p>
-<p>去旅行，不确定方向，不确定地点，走到哪就停到哪拍拍风景，拍拍过路人，然后休息一下继续上路。走到一个地方就问问当地人有什么美食，有什么好看的风景。然后在那留下回忆，再去找下一个目的地。　　</p>
-<p>我想走到一个古老的小镇，那里没有油漆刺鼻的味道那里是用青石板铺路，深绿的青石板上有一些积水，让青色更加深沉，然后那里会有个小亭子，它坐落在小湖边，在那里等到太阳落下，金轮边留了一些残影，那时，是拍摄美景的好时间。这就是我们说的，每个人心中，都会有一个古镇情怀，流水江南，烟笼人家。　　</p>
-<p>有时候，去旅行并不只是为了看美景，尝美食。其实也是给自己一个出去走走的机会。我们会为街头独特的风景驻足；偶尔因高山流水的美丽而停留；偶尔因惊鸿一瞥而吸引；或春暖花开时因百花齐放而震撼。　　</p>
-<p>所以，你可以尝试一个人背上行囊，走过一个又一个陌生的城市，为自己找一份宁静，享受旅不问人，行随己意的潇洒。　　</p>
-<p>世界那么大，我想去看看。</p>
+                <h1 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h1><h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一.定义"></a>一.定义</h2><p>1.输入 –&gt; TRM –&gt; 输出</p>
+<p>example:我爱你 –&gt; transformer –&gt;I love you</p>
+<p>transformer分为编码和解码两个操作（Encorders and Decorders）</p>
+<p>在训练的过程中，所有的编码器结构相同，但是参数不同，也就是训练数据不同</p>
+<p>解码器同上</p>
+<h3 id="1-编码器结构："><a href="#1-编码器结构：" class="headerlink" title="1.编码器结构："></a>1.编码器结构：</h3><p>(1).输入部分：</p>
+<p>Embedding</p>
+<p>位置编码</p>
+<p>为什么需要位置编码？</p>
+<p>在RNN中，u输入参数，w隐藏参数，v输出参数，这是一套参数，对于所有的timestapes，他都共享一套参数，展开后可以了解到，所有的小的处理单元都是只输入了一套参数</p>
+<p>(2).注意力机制：人类在看一个物体时经常是关注颜色更为深的，更为显眼的区域，这就是注意力机制的一种外表形式。<br>Attention(Q,K,V) = (softmax(Q*K^T)/dk^(1/2))*V(大致了解一下先)</p>
+<p>(3).前馈神经网络：</p>
 
                 
               </div>
@@ -313,7 +319,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%97%A5%E5%B8%B8%E7%90%90%E4%BA%8B/" class="category-chain-item">日常琐事</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" class="category-chain-item">学习资料</a>
   
   
 
@@ -328,7 +334,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%97%A5%E8%AE%B0/">#日记</a>
+        <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">#机器学习</a>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">#学习笔记</a>
+      
+        <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">#神经网络</a>
+      
+        <a href="/tags/transformer/">#transformer</a>
       
     </div>
   
@@ -340,8 +352,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>世界这么大，我先去看看。</div>
-      <div>https://willow-god.gitee.io/2023/03/12/世界这么大，我想去看看/</div>
+      <div>CNN+transformer入门学习</div>
+      <div>https://willow-god.gitee.io/2023/03/13/CNN+transformer/</div>
     </div>
     <div class="license-meta">
       
@@ -353,7 +365,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月12日</div>
+          <div>2023年3月13日</div>
         </div>
       
       
@@ -385,9 +397,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/13/CNN+transformer/" title="CNN+transformer入门学习">
+                      <a href="/2023/03/22/MFC%E5%AE%9E%E7%8E%B0%E5%BF%AB%E4%B9%90%E8%BF%9E%E8%BF%9E%E7%9C%8B/" title="MFC实现快乐连连看">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CNN+transformer入门学习</span>
+                        <span class="hidden-mobile">MFC实现快乐连连看</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -395,8 +407,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/12/%E6%B8%BA%E5%B0%8F%E4%B8%8E%E4%B8%8D%E6%9C%BD/" title="渺小与不朽">
-                        <span class="hidden-mobile">渺小与不朽</span>
+                      <a href="/2023/03/12/%E4%B8%96%E7%95%8C%E8%BF%99%E4%B9%88%E5%A4%A7%EF%BC%8C%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E7%9C%8B/" title="世界这么大，我先去看看。">
+                        <span class="hidden-mobile">世界这么大，我先去看看。</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
