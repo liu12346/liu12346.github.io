@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>如何轻松愉快的写你的第一个油猴脚本</title>
+    <link href="/2023/04/18/%E5%A6%82%E4%BD%95%E8%BD%BB%E6%9D%BE%E6%84%89%E5%BF%AB%E7%9A%84%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/"/>
+    <url>/2023/04/18/%E5%A6%82%E4%BD%95%E8%BD%BB%E6%9D%BE%E6%84%89%E5%BF%AB%E7%9A%84%E5%86%99%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/</url>
+    
+    <content type="html"><![CDATA[<h1 id="如何轻松愉快的写你的第一个油猴脚本"><a href="#如何轻松愉快的写你的第一个油猴脚本" class="headerlink" title="如何轻松愉快的写你的第一个油猴脚本"></a>如何轻松愉快的写你的第一个油猴脚本</h1><p>大家应该都用过油猴吧？这玩意简直就是大学生，程序员等等各类宅男的梦中工具，可以实现很多想不到的功能，但是它使用了JS的功能，听到JS，大家可能就有点懵了：我又没学过JS，我怎么轻松的写脚本呢？这不是开玩笑呢嘛？当然不是，作为一个初学者，现在我来教大家怎么写一个简简单单的油猴脚本。这个网站由于是Gitee page原因，不能太大，为了节约资源，我就不放图片了</p><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>首先，大家应该准备一个编辑器，啥都行，记事本应该也行（吧），尽量能高级一点，这样会有代码高亮等提示和缩进，更方便自己写代码，然后确定一下自己的需求，比如，我想要实现在我们学校教务系统的评教模块写一个一键评教的功能，懒得点按键，网站如下：<a href="http://218.197.101.69:8080/index%EF%BC%88%E5%AF%B9%E6%B2%A1%E9%94%99%E5%B0%B1%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95%E7%B2%97%E6%9A%B4%E7%9A%84%E7%9A%84%E7%BD%91%E7%AB%99%EF%BC%8C%E6%98%AF%E4%B8%8D%E6%98%AF%E6%84%9F%E8%A7%89%E5%BE%88%E7%A6%BB%E8%B0%B1%EF%BC%89%EF%BC%8C%E7%82%B9%E5%BC%80%E5%90%8E%E4%BD%A0%E4%BC%9A%E5%8F%91%E7%8E%B0%E6%9C%89%E5%BE%88%E5%A4%9A%E9%80%89%E9%A1%B9%EF%BC%88%E5%BD%93%E7%84%B6%E4%B8%BA%E4%BA%86%E7%BB%99%E9%9D%A2%E5%AD%90%E4%B8%80%E8%88%AC%E9%83%BD%E9%80%89%E7%9A%84%E6%98%AF%E9%9D%9E%E5%B8%B8%E5%A5%BD%E9%80%89%E9%A1%B9%EF%BC%89%EF%BC%8C%E9%82%A3%E6%88%91%E4%BB%AC%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%B0%B1%E6%98%AF%E4%B8%80%E9%94%AE%E9%80%89%E6%8B%A9%E6%89%80%E6%9C%89%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD%E9%80%89%E9%A1%B9%E5%92%AF%E3%80%82">http://218.197.101.69:8080/index（对没错就这么简单粗暴的的网站，是不是感觉很离谱），点开后你会发现有很多选项（当然为了给面子一般都选的是非常好选项），那我们的任务就是一键选择所有的非常好选项咯。</a></p><h2 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h2><h3 id="代码头信息块"><a href="#代码头信息块" class="headerlink" title="代码头信息块"></a>代码头信息块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-comment">// ==UserScript==</span><br><span class="hljs-comment">// @name          教务系统一键评教</span><br><span class="hljs-comment">// @namespace     https://willow-god.gitee.io/</span><br><span class="hljs-comment">// @version       1.0.3</span><br><span class="hljs-comment">// @description  打开教务系统，随便打开一个老师的评价页面，点击后会自动全选非常好选项</span><br><span class="hljs-comment">// @author       liushen</span><br><span class="hljs-comment">// @include      *://218.197.101.69:8080/edu/task/evaluate/*</span><br><span class="hljs-comment">// @include      *://218.197.101.69:8080/edu/task/evaluate/*</span><br><span class="hljs-comment">// ==/UserScript==</span><br></code></pre></td></tr></table></figure><h3 id="按钮信息设置"><a href="#按钮信息设置" class="headerlink" title="按钮信息设置"></a>按钮信息设置</h3><p>观察以上代码，我们可以看见一些信息，name呀啥的，我就不说了，我们最重要的就是那个include，这个指的是我们所要应用的网站，有的时候是这个，有的时候是哪个，这个就自己确定了，*表示的是随意，你可以随便填入你自己所需要的个性化网站。</p><p>然后开始看以下内容：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-meta">&#x27;use strict&#x27;</span>;<br>   <span class="hljs-keyword">var</span> button = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;button&quot;</span>); <span class="hljs-comment">//创建一个按钮</span><br>   button.<span class="hljs-property">textContent</span> = <span class="hljs-string">&quot;一键评教&quot;</span>; <span class="hljs-comment">//按钮内容</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">width</span> = <span class="hljs-string">&quot;90px&quot;</span>; <span class="hljs-comment">//按钮宽度</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">height</span> = <span class="hljs-string">&quot;30px&quot;</span>; <span class="hljs-comment">//按钮高度</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">align</span> = <span class="hljs-string">&quot;center&quot;</span>; <span class="hljs-comment">//文本居中</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">color</span> = <span class="hljs-string">&quot;white&quot;</span>; <span class="hljs-comment">//按钮文字颜色</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">background</span> = <span class="hljs-string">&quot;#13bbb3&quot;</span>; <span class="hljs-comment">//按钮底色</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">border</span> = <span class="hljs-string">&quot;1px solid #e33e33&quot;</span>; <span class="hljs-comment">//边框属性</span><br>   button.<span class="hljs-property">style</span>.<span class="hljs-property">borderRadius</span> = <span class="hljs-string">&quot;4px&quot;</span>; <span class="hljs-comment">//按钮四个角弧度</span><br></code></pre></td></tr></table></figure><p>第一行那个’use strict’是指的JAVASCRIPT的<a href="https://www.runoob.com/js/js-strict.html">严格模式</a>，具体啥意思……大家自己看链接吧，俺也不太能讲明白，后面的一些，很简单，随便创建了一个按钮，然后修改了按钮的各个信息而已，大家自己了解一下，就可以进行下一个内容了。</p><h3 id="按钮响应函数"><a href="#按钮响应函数" class="headerlink" title="按钮响应函数"></a>按钮响应函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">button.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> &#123;<br>       <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>           <span class="hljs-comment">// Find all instances of &quot;非常好&quot;</span><br>           <span class="hljs-keyword">const</span> elements = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;span&#x27;</span>);<br><br>           <span class="hljs-comment">// Click each element that contains &quot;非常好&quot;</span><br>           elements.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">element</span>) =&gt;</span> &#123;<br>               <span class="hljs-keyword">if</span> (element.<span class="hljs-property">innerText</span> === <span class="hljs-string">&#x27;A、非常好&#x27;</span>) &#123;<br>                   element.<span class="hljs-title function_">click</span>();<br>                   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(element)<br>               &#125;<br>           &#125;);<br>           <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>               <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.btns-r&#x27;</span>).<span class="hljs-property">children</span>[<span class="hljs-number">1</span>].<span class="hljs-title function_">click</span>();<br>           &#125;,<span class="hljs-number">100</span>) <span class="hljs-comment">//等待0.1秒后再退出</span><br>           <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.btns-r&#x27;</span>).<span class="hljs-property">children</span>[<span class="hljs-number">0</span>].<span class="hljs-title function_">click</span>();<br>       &#125;, <span class="hljs-number">100</span>); <span class="hljs-comment">// 等待 0.1 秒钟再执行评教操作</span><br>   &#125;);<br></code></pre></td></tr></table></figure><p>这一段就是核心咯，注意听，首先，第一行“button.addEventListener(‘click’, () =&gt; {代码在这里})”，这就是一个标准的监听器函数，监听的行为是点击，如果有点击，执行里面的内容。第二行中的“setTimeout(() =&gt; {},毫秒数)”，这个就是为了给网站一点时间来刷新（我是这么理解的，如有错误请致电10086），然后，我发现一个严重的事情，这个网站上的所有的非常好按钮只有一个data-code参数的值不太一样，感觉不是很有大众性，所以这里，我直接按照文字来找他，使用函数document.querySelectorAll(‘span’)寻找所有span标签的内容（具体是什么标签可以试试右键检查后自己寻找），当然，如果不知道可以直接使用document.querySelectorAll(‘*’)获取所有信息。</p><p>然后随便遍历所有关键字进行查找，找到后点击即可：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">elements.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">element</span>) =&gt;</span> &#123;<br><span class="hljs-keyword">if</span> (element.<span class="hljs-property">innerText</span> === <span class="hljs-string">&#x27;A、非常好&#x27;</span>) &#123;<br>element.<span class="hljs-title function_">click</span>();<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(element)<br>&#125;<br>&#125;);<br></code></pre></td></tr></table></figure><p>最后一部分：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">var</span> bar = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByClassName</span>(<span class="hljs-string">&#x27;btns-r&#x27;</span>)[<span class="hljs-number">0</span>]; <span class="hljs-comment">//getElementsByClassName 返回的是数组，所以要用[] 下标</span><br>   bar.<span class="hljs-title function_">appendChild</span>(button); <span class="hljs-comment">//把按钮加入到 x 的子节点中</span><br></code></pre></td></tr></table></figure><p>这个是添加我们的按钮的，我想要将其添加到标题栏，所以选择了最顶部分的一堆按钮之中，这对按钮虽在的标签是&lt;class = “btns-r”&gt;,所以直接获取，注意这是一个数组，里面会有很多的按钮，所以需要【】获取，最后将其添加进来即可</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>JavaScript</tag>
+      
+      <tag>油猴</tag>
+      
+      <tag>脚本</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>几个很有趣的python迷你程序</title>
     <link href="/2023/04/01/%E5%87%A0%E4%B8%AA%E5%BE%88%E6%9C%89%E8%B6%A3%E7%9A%84python%E8%BF%B7%E4%BD%A0%E7%A8%8B%E5%BA%8F/"/>
     <url>/2023/04/01/%E5%87%A0%E4%B8%AA%E5%BE%88%E6%9C%89%E8%B6%A3%E7%9A%84python%E8%BF%B7%E4%BD%A0%E7%A8%8B%E5%BA%8F/</url>
@@ -13,7 +42,7 @@
     
     <categories>
       
-      <category>日常琐事</category>
+      <category>日常分享</category>
       
     </categories>
     
@@ -129,7 +158,7 @@
     
     <categories>
       
-      <category>日常琐事</category>
+      <category>日常分享</category>
       
     </categories>
     
@@ -154,7 +183,7 @@
     
     <categories>
       
-      <category>日常琐事</category>
+      <category>日常分享</category>
       
     </categories>
     
@@ -181,7 +210,7 @@
     
     <categories>
       
-      <category>日常琐事</category>
+      <category>日常分享</category>
       
     </categories>
     
