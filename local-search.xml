@@ -122,7 +122,7 @@
     <link href="/2023/03/13/CNN+transformer/"/>
     <url>/2023/03/13/CNN+transformer/</url>
     
-    <content type="html"><![CDATA[<h1 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h1><h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一.定义"></a>一.定义</h2><p>1.输入 –&gt; TRM –&gt; 输出</p><p>example:我爱你 –&gt; transformer –&gt;I love you</p><p>transformer分为编码和解码两个操作（Encorders and Decorders）</p><p>在训练的过程中，所有的编码器结构相同，但是参数不同，也就是训练数据不同</p><p>解码器同上</p><h3 id="1-编码器结构："><a href="#1-编码器结构：" class="headerlink" title="1.编码器结构："></a>1.编码器结构：</h3><p>(1).输入部分：</p><p>Embedding</p><p>位置编码</p><p>为什么需要位置编码？</p><p>在RNN中，u输入参数，w隐藏参数，v输出参数，这是一套参数，对于所有的timestapes，他都共享一套参数，展开后可以了解到，所有的小的处理单元都是只输入了一套参数</p><p>(2).注意力机制：人类在看一个物体时经常是关注颜色更为深的，更为显眼的区域，这就是注意力机制的一种外表形式。<br>Attention(Q,K,V) = (softmax(Q*K^T)/dk^(1/2))*V(大致了解一下先)</p><p>(3).前馈神经网络：</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h1><h2 id="一-定义"><a href="#一-定义" class="headerlink" title="一.定义"></a>一.定义</h2><p>1.输入 –&gt; TRM –&gt; 输出</p><p>example:我爱你 –&gt; transformer –&gt;I love you<br>11</p><p>transformer分为编码和解码两个操作（Encorders and Decorders）</p><p>在训练的过程中，所有的编码器结构相同，但是参数不同，也就是训练数据不同</p><p>解码器同上</p><h3 id="1-编码器结构："><a href="#1-编码器结构：" class="headerlink" title="1.编码器结构："></a>1.编码器结构：</h3><p>(1).输入部分：</p><p>Embedding</p><p>位置编码</p><p>为什么需要位置编码？</p><p>在RNN中，u输入参数，w隐藏参数，v输出参数，这是一套参数，对于所有的timestapes，他都共享一套参数，展开后可以了解到，所有的小的处理单元都是只输入了一套参数</p><p>(2).注意力机制：人类在看一个物体时经常是关注颜色更为深的，更为显眼的区域，这就是注意力机制的一种外表形式。<br>Attention(Q,K,V) = (softmax(Q*K^T)/dk^(1/2))*V(大致了解一下先)</p><p>(3).前馈神经网络：</p>]]></content>
     
     
     <categories>
